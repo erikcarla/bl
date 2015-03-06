@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+AddOutputFilterByType DEFLATE text/html text/plain text/javascript
+SetOutputFilter DEFLATE
+	SetEnvIfNoCase Request_URI  \
+		\.(?:gif|jpe?g|png)$ no-gzip dont-vary
+	SetEnvIfNoCase Request_URI  \
+	        \.(?:exe|t?gz|zip|gz2|sit|rar)$ no-gzip dont-vary
+	  
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.member.bncc\.net$ [NC]
+RewriteRule ^(.*)$ http://member.bncc.net/$1 [R=301,L]

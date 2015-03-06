@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+a
+{
+	text-decoration:none;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000;
+}
+
+table
+{
+	text-align:center;
+	margin:auto;
+}
+
+#table2
+{	
+	width:700px;
+	height:auto;
+
+	margin:auto;
+	border:5px solid;
+	border-color:#FFFFFF;
+}
+
+table #title
+{
+	font-size:20px;
+	background-color:#6633FF;
+}
+
+#contents tr:nth-child(even)
+{
+    background-color: #FF6633;
+}
+
+.clear
+{
+	clear:both;	
+}
+
+h6
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#error
+{
+	color:#FF0000;
+	font-size:14px;
+}
+
+#wrapper
+{
+	width:1375px;
+	height:auto;
+	background:url(images/background.jpg);
+	background-repeat:round;
+}
+
+#wrapper #logo
+{
+	margin-top:-80px;
+	margin-left:1100px;
+}
+
+#wrapper #header
+{
+	height:95px;
+	padding-top:45px;
+	padding-right:750px;
+	padding-left:30px;
+	font-size:40px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align:center;
+	color:#000000;
+}
+
+#wrapper #menubar
+{
+	height:50px;
+	margin-top:35px;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+#wrapper #menubar .menu_link
+{
+	width:90px;
+	margin-left:175px;
+	margin-top:10px;
+	text-align:center;
+	padding:5px;
+	float:left;
+}
+
+#wrapper #menubar .menu_link:hover
+{
+	color:#FFFFFF;
+	width:90px;
+	height:20px;
+	text-align:center;
+	padding:5px;
+	float:left;
+	cursor:pointer;
+	-webkit-box-shadow: 0px 0px 10px #000000;
+    background:#000000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#wrapper #content
+{
+	margin-left:-20px;
+	margin-top:40px;
+	height:auto;
+	overflow:auto;
+	padding:20px;
+	font-family:"Arial", Helvetica, sans-serif;
+	color:#FFF;
+	/*background:#CCC;-moz-linear-gradient(20% 80% 90deg,#FFF #CCC);
+    background:-webkit-gradient(linear, 0% 30%, 0% 100%, from(#CCC), to(#FFF));*/
+}
+
+#wrapper #content input
+{
+	margin-top:5px;
+	margin-bottom:5px;
+	background-color:#666;
+    padding:3px;
+    border-top: 2px solid #666;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    /***buat animasi transisi di box shadow mau brpa lama pergantiannya***/
+    -webkit-transition-property: -webkit-box-shadow, background;
+    -webkit-transition-duration: 0.25s;
+   /*buat kasih bayangan dan gradient warna di kotak inputan*/
+	-moz-border-radius:5px;
+	-moz-box-shadow:1px 1px 5px #666;
+	background-image: -moz-linear-gradient(0% 90% 90deg,#CCC, #999); 
+
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:1px 1px 5px #666;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999), to(#CCC));
+}
+
+#wrapper #content input:hover 
+{
+    -webkit-box-shadow: 0px 0px 7px #666;
+    background:#CCC;
+}
+
+#wrapper #content select
+{
+	margin-top:5px;
+	margin-bottom:10px;
+	background-color:#CCC;
+	color:#000;
+    padding:3px;
+    border-top: 2px solid #666;
+	border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+   /*buat kasih bayangan dan gradient warna di kotak inputan*/
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 3px 5px #000;
+	background-image: -moz-linear-gradient(0% 90% 90deg,#FFF, #CCC); 
+
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 3px 5px #000;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCC), to(#FFF));
+}
+
+#wrapper #content select:hover 
+{
+   background:#CCC;
+}
+
+#wrapper #content #wrap_tab
+{
+	margin:auto;
+	width:600px;
+	height:270px;
+	text-align:center;
+}
+
+#wrapper #content .tab
+{
+	width:300px;
+	text-align:center;
+	float:left;
+}
+
+#wrapper #footer
+{
+	margin-top:50px;
+	font-family:"Arial", Helvetica, sans-serif;
+	text-align:center;
+	color:#FFFFFF;
+}
